@@ -6,7 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="freshCartParent" />
+        <module name="common-util" />
+        <module name="common-service" />
+        <module name="freshCart-manager" />
+        <module name="freshCart-model" />
       </profile>
     </annotationProcessing>
   </component>
