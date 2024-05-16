@@ -1,6 +1,7 @@
 package com.nickwww.manager.config;
 
 import com.nickwww.manager.interceptor.LoginAuthInterceptor;
+import com.nickwww.manager.properties.UserProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -13,11 +14,14 @@ public class WebMvcConfiguration implements WebMvcConfigurer {
     @Autowired
     private LoginAuthInterceptor loginAuthInterceptor;
 
+    @Autowired
+    private UserProperties userProperties;
+
     // Interceptor registry
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(loginAuthInterceptor)
-                .excludePathPatterns("/admin/system/index/login", "/admin/system/index/generateValidateCode")
+                .excludePathPatterns(userProperties.getNoAuthUrls())
                 .addPathPatterns("/**");
     }
 

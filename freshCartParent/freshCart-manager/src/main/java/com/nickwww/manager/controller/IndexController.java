@@ -8,6 +8,7 @@ import com.nickwww.model.vo.common.Result;
 import com.nickwww.model.vo.common.ResultCodeEnum;
 import com.nickwww.model.vo.system.LoginVo;
 import com.nickwww.model.vo.system.ValidateCodeVo;
+import com.nickwww.utils.AuthContextUtil;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,10 +25,8 @@ public class IndexController {
     private ValidateCodeService validateCodeService;
 
     @GetMapping(value = "/getUserInfo")
-    public Result getUserInfo(HttpServletRequest httpServletRequest){
-        String token = httpServletRequest.getHeader("token");
-        SysUser sysUser = sysUserService.getUserInfo(token);
-        return Result.build(sysUser, ResultCodeEnum.SUCCESS);
+    public Result getUserInfo(){
+        return Result.build(AuthContextUtil.get(), ResultCodeEnum.SUCCESS);
     }
 
     @GetMapping(value = "/logout")
