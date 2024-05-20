@@ -1,12 +1,16 @@
 package com.nickwww.product.service.Impl;
 
+import com.alibaba.fastjson.JSON;
 import com.nickwww.model.entity.product.Category;
 import com.nickwww.product.mapper.CategoryMapper;
 import com.nickwww.product.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 @Service
@@ -14,9 +18,22 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Autowired
     private CategoryMapper categoryMapper;
+
+    @Autowired
+    private RedisTemplate<String, String> redisTemplate;
+
     @Override
     public List<Category> selectOneCategory() {
-        return categoryMapper.selectOneCategory();
+        String listJson = redisTemplate.opsForValue().get("category:one");
+        if(!StringUtils.hasText(listJson)){
+            List<Category> ret = JSON.parseArray(listJson, Category.class);
+            return ret;
+        }
+        else {
+            List<Category> ret = categoryMapper.selectOneCategory();
+            redisTemplate.opsForValue().set("category:one", JSON.toJSONString(ret), 7, TimeUnit.DAYS);
+            return ret;
+        }
     }
 
     @Override
