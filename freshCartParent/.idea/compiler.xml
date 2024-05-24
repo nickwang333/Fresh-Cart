@@ -17,23 +17,33 @@
         <module name="freshCart-Server-Gateway" />
         <module name="service-order" />
         <module name="freshCart-model" />
+        <module name="freshCart-Registry" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="freshCart-Config" target="17" />
+      <module name="freshCart-monitoring" target="17" />
+      <module name="tmp-client" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common-service" options="-parameters" />
       <module name="common-util" options="-parameters" />
+      <module name="freshCart-Config" options="-parameters" />
+      <module name="freshCart-Registry" options="-parameters" />
       <module name="freshCart-Server-Gateway" options="-parameters" />
       <module name="freshCart-Service" options="" />
       <module name="freshCart-Service-Client" options="" />
       <module name="freshCart-manager" options="-parameters" />
       <module name="freshCart-model" options="-parameters" />
+      <module name="freshCart-monitoring" options="-parameters" />
       <module name="service-order" options="-parameters" />
       <module name="service-product" options="-parameters" />
       <module name="service-product-client" options="-parameters" />
       <module name="service-user" options="-parameters" />
       <module name="service-user-client" options="-parameters" />
+      <module name="tmp-client" options="-parameters" />
     </option>
   </component>
 </project>

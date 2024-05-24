@@ -5,6 +5,7 @@ import com.nickwww.model.entity.product.Category;
 import com.nickwww.product.mapper.CategoryMapper;
 import com.nickwww.product.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -22,6 +23,7 @@ public class CategoryServiceImpl implements CategoryService {
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
 
+    @Cacheable(value = "category", key = "'all'")
     @Override
     public List<Category> selectOneCategory() {
         String listJson = redisTemplate.opsForValue().get("category:one");

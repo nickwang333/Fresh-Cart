@@ -605,3 +605,147 @@ io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.6.131:6
 2024-05-13 23:17:47 Initializing Spring DispatcherServlet 'dispatcherServlet'
 2024-05-13 23:17:47 Initializing Servlet 'dispatcherServlet'
 2024-05-13 23:17:47 Completed initialization in 1 ms
+2024-05-24 00:55:12 HV000001: Hibernate Validator 8.0.0.Final
+2024-05-24 00:55:12 Starting ManagerApplication using Java 17.0.7 with PID 39569 (/Users/wangzhuofeng/Desktop/Fresh-Cart/freshCartParent/freshCart-manager/target/classes started by wangzhuofeng in /Users/wangzhuofeng/Desktop/Fresh-Cart/freshCartParent)
+2024-05-24 00:55:12 The following 1 profile is active: "dev"
+2024-05-24 00:55:13 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-24 00:55:13 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-24 00:55:13 Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-05-24 00:55:14 Tomcat initialized with port(s): 8501 (http)
+2024-05-24 00:55:14 Initializing ProtocolHandler ["http-nio-8501"]
+2024-05-24 00:55:14 Starting service [Tomcat]
+2024-05-24 00:55:14 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2024-05-24 00:55:14 Initializing Spring embedded WebApplicationContext
+2024-05-24 00:55:14 Root WebApplicationContext: initialization completed in 1869 ms
+2024-05-24 00:55:15 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcConfiguration': Unsatisfied dependency expressed through field 'userProperties': Error creating bean with name 'nickwww.auth-com.nickwww.manager.properties.UserProperties': Could not bind properties to 'UserProperties' : prefix=nickwww.auth, ignoreInvalidFields=false, ignoreUnknownFields=true
+2024-05-24 00:55:15 Stopping service [Tomcat]
+2024-05-24 00:55:15 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-24 00:55:15 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target [Bindable@74707df8 type = java.util.List<java.lang.String>, value = 'provided', annotations = array<Annotation>[[empty]]] failed:
+
+    Property: nickwww.auth.noauthurls[1][0]
+    Value: "/admin/system/index/generateValidateCode"
+    Origin: class path resource [application-dev.yml] - 23:11
+    Reason: The elements [nickwww.auth.noauthurls[1][0]] were left unbound.
+
+Action:
+
+Update your application's configuration
+
+2024-05-24 00:57:26 HV000001: Hibernate Validator 8.0.0.Final
+2024-05-24 00:57:26 Starting ManagerApplication using Java 17.0.7 with PID 40090 (/Users/wangzhuofeng/Desktop/Fresh-Cart/freshCartParent/freshCart-manager/target/classes started by wangzhuofeng in /Users/wangzhuofeng/Desktop/Fresh-Cart/freshCartParent)
+2024-05-24 00:57:26 The following 1 profile is active: "dev"
+2024-05-24 00:57:27 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-24 00:57:27 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-24 00:57:27 Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2024-05-24 00:57:27 Tomcat initialized with port(s): 8501 (http)
+2024-05-24 00:57:27 Initializing ProtocolHandler ["http-nio-8501"]
+2024-05-24 00:57:27 Starting service [Tomcat]
+2024-05-24 00:57:27 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2024-05-24 00:57:27 Initializing Spring embedded WebApplicationContext
+2024-05-24 00:57:27 Root WebApplicationContext: initialization completed in 1630 ms
+2024-05-24 00:57:28 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcConfiguration': Unsatisfied dependency expressed through field 'userProperties': Error creating bean with name 'nickwww.auth-com.nickwww.manager.properties.UserProperties': Could not bind properties to 'UserProperties' : prefix=nickwww.auth, ignoreInvalidFields=false, ignoreUnknownFields=true
+2024-05-24 00:57:28 Stopping service [Tomcat]
+2024-05-24 00:57:28 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-24 00:57:28 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target [Bindable@473847fb type = java.util.List<java.lang.String>, value = 'provided', annotations = array<Annotation>[[empty]]] failed:
+
+    Property: nickwww.auth.noauthurls[1][0]
+    Value: "/admin/system/index/generateValidateCode"
+    Origin: class path resource [application-dev.yml] - 23:11
+    Reason: The elements [nickwww.auth.noauthurls[1][0]] were left unbound.
+
+Action:
+
+Update your application's configuration
+
+2024-05-24 00:58:06 HV000001: Hibernate Validator 8.0.0.Final
+2024-05-24 00:58:07 Starting ManagerApplication using Java 17.0.7 with PID 40250 (/Users/wangzhuofeng/Desktop/Fresh-Cart/freshCartParent/freshCart-manager/target/classes started by wangzhuofeng in /Users/wangzhuofeng/Desktop/Fresh-Cart/freshCartParent)
+2024-05-24 00:58:07 The following 1 profile is active: "dev"
+2024-05-24 00:58:08 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-24 00:58:08 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-24 00:58:08 Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-05-24 00:58:08 Tomcat initialized with port(s): 8501 (http)
+2024-05-24 00:58:08 Initializing ProtocolHandler ["http-nio-8501"]
+2024-05-24 00:58:08 Starting service [Tomcat]
+2024-05-24 00:58:08 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2024-05-24 00:58:08 Initializing Spring embedded WebApplicationContext
+2024-05-24 00:58:08 Root WebApplicationContext: initialization completed in 1865 ms
+2024-05-24 00:58:09 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcConfiguration': Unsatisfied dependency expressed through field 'userProperties': Error creating bean with name 'nickwww.auth-com.nickwww.manager.properties.UserProperties': Could not bind properties to 'UserProperties' : prefix=nickwww.auth, ignoreInvalidFields=false, ignoreUnknownFields=true
+2024-05-24 00:58:09 Stopping service [Tomcat]
+2024-05-24 00:58:09 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-24 00:58:09 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target [Bindable@79604abe type = java.util.List<java.lang.String>, value = 'provided', annotations = array<Annotation>[[empty]]] failed:
+
+    Property: nickwww.auth.noauthurls[1][0]
+    Value: "/admin/system/index/generateValidateCode"
+    Origin: class path resource [application-dev.yml] - 23:11
+    Reason: The elements [nickwww.auth.noauthurls[1][0]] were left unbound.
+
+Action:
+
+Update your application's configuration
+
+2024-05-24 01:07:14 HV000001: Hibernate Validator 8.0.0.Final
+2024-05-24 01:07:14 Starting ManagerApplication using Java 17.0.7 with PID 42409 (/Users/wangzhuofeng/Desktop/Fresh-Cart/freshCartParent/freshCart-manager/target/classes started by wangzhuofeng in /Users/wangzhuofeng/Desktop/Fresh-Cart/freshCartParent)
+2024-05-24 01:07:14 The following 1 profile is active: "dev"
+2024-05-24 01:07:15 Multiple Spring Data modules found, entering strict repository configuration mode
+2024-05-24 01:07:15 Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-05-24 01:07:15 Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2024-05-24 01:07:15 Tomcat initialized with port(s): 8501 (http)
+2024-05-24 01:07:15 Initializing ProtocolHandler ["http-nio-8501"]
+2024-05-24 01:07:15 Starting service [Tomcat]
+2024-05-24 01:07:15 Starting Servlet engine: [Apache Tomcat/10.1.7]
+2024-05-24 01:07:15 Initializing Spring embedded WebApplicationContext
+2024-05-24 01:07:15 Root WebApplicationContext: initialization completed in 1601 ms
+2024-05-24 01:07:16 Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcConfiguration': Unsatisfied dependency expressed through field 'userProperties': Error creating bean with name 'nickwww.auth-com.nickwww.manager.properties.UserProperties': Could not bind properties to 'UserProperties' : prefix=nickwww.auth, ignoreInvalidFields=false, ignoreUnknownFields=true
+2024-05-24 01:07:16 Stopping service [Tomcat]
+2024-05-24 01:07:16 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-05-24 01:07:16 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target [Bindable@7e5e6573 type = java.util.List<java.lang.String>, value = 'provided', annotations = array<Annotation>[[empty]]] failed:
+
+    Property: nickwww.auth.noauthurls[1][0]
+    Value: "/admin/system/index/generateValidateCode"
+    Origin: class path resource [application-dev.yml] - 23:11
+    Reason: The elements [nickwww.auth.noauthurls[1][0]] were left unbound.
+
+Action:
+
+Update your application's configuration
+

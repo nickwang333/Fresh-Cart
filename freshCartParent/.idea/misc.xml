@@ -9,7 +9,10 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/freshCart-Config/pom.xml" />
         <option value="$PROJECT_DIR$/freshCart-common/common-service/service-product/pom.xml" />
+        <option value="$PROJECT_DIR$/freshCart-monitoring/pom.xml" />
+        <option value="$PROJECT_DIR$/tmp-client/pom.xml" />
       </set>
     </option>
   </component>

@@ -15,6 +15,8 @@
         <module>freshCart-Server-Gateway</module>
         <module>freshCart-Service</module>
         <module>freshCart-Service-Client</module>
+        <module>freshCart-Registry</module>
+        <module>tmp-client</module>
     </modules>
 
     <parent>
